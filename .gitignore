@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+best.pt
+temp_input.jpg
+temp.jpg
