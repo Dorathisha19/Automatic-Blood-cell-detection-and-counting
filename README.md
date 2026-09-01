@@ -4,7 +4,7 @@ An AI-powered system that automatically detects and counts Red Blood Cells (RBC)
 
 ## Demo
 
-![Gradio Interface](gradio_demo.png)
+![Gradio Interface](gradio.demo.png)
 
 ## Results
 
