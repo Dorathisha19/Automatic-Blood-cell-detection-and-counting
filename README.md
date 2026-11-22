@@ -1,6 +1,6 @@
 # Automated Blood Cell Detection and Counting
 
-An AI-powered system that automatically detects and counts Red Blood Cells (RBC), White Blood Cells (WBC), and Platelets from blood smear images using YOLOv8 deep learning.
+An AI-powered system that automatically detects and counts Red Blood Cells (RBC), White Blood Cells (WBC), and Platelets from blood smear images using YOLOv10 deep learning.
 
 ## Demo
 
@@ -30,12 +30,12 @@ An AI-powered system that automatically detects and counts Red Blood Cells (RBC)
 | Fuzzy CNN | ~90% |
 | RetinaNet | ~92% |
 | CNN + VGG16 + CBAM | ~94% |
-| **Our YOLOv8 System** | **93.64% mAP50** |
+| **Our YOLOv10 System** | **93.64% mAP50** |
 
 ## Project Overview
 
 This project implements a complete automated blood cell analysis pipeline:
-- **YOLOv8** deep learning model for real-time detection
+- **YOLOv10** deep learning model for real-time detection
 - Detects 3 cell types: RBC, WBC, and Platelets simultaneously
 - **Gradio web interface** for easy image upload and real-time results
 - Trained on BCCD (Blood Cell Count and Detection) dataset
@@ -44,12 +44,12 @@ This project implements a complete automated blood cell analysis pipeline:
 
 ## System Architecture
 
-Input (Blood Smear Image) → Preprocessing → YOLOv8 Detection → Post Processing → Output (Gradio UI)
+Input (Blood Smear Image) → Preprocessing → YOLOv10 Detection → Post Processing → Output (Gradio UI)
 
 ## Technologies Used
 
 - Python 3.x
-- YOLOv8 (Ultralytics)
+- YOLOv10 (Ultralytics)
 - OpenCV
 - Gradio
 - NumPy
