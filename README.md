@@ -2,35 +2,17 @@
 
 An AI-powered system that automatically detects and counts Red Blood Cells (RBC), White Blood Cells (WBC), and Platelets from blood smear images using YOLOv10 deep learning.
 
-## Demo
-
-![Gradio Interface](gradio.demo.png)
-
-## Results
-
-![Detection Results](final_results.png)
-
-![Sample Predictions](sample_predictions.png)
-
 ## Performance Metrics
 
 | Metric | Score |
 |--------|-------|
-| mAP50 | 93.64% |
-| Precision | 85.70% |
-| Recall | 93.44% |
-| mAP50-95 | 64.80% |
-| Training Epochs | 30 |
+| mAP50 | 85.6% |
+| Precision | 82.7% |
+| Recall | 81.7% |
+| mAP50-95 | 53.9% |
+| Training Epochs | 25 |
 
-## Comparison with Existing Methods
-
-| Method | Accuracy |
-|--------|----------|
-| Traditional Image Processing | ~85% |
-| Fuzzy CNN | ~90% |
-| RetinaNet | ~92% |
-| CNN + VGG16 + CBAM | ~94% |
-| **Our YOLOv10 System** | **93.64% mAP50** |
+Evaluated on the 94-image validation set. Per-class mAP50: RBC 88.0%, WBC 98.3%, Platelets 70.6%.
 
 ## Project Overview
 
@@ -39,8 +21,8 @@ This project implements a complete automated blood cell analysis pipeline:
 - Detects 3 cell types: RBC, WBC, and Platelets simultaneously
 - **Gradio web interface** for easy image upload and real-time results
 - Trained on BCCD (Blood Cell Count and Detection) dataset
-- Preprocessing: noise reduction, resizing, histogram equalization
-- Post-processing: cell counting and density calculation
+- Preprocessing: images resized to 640×640
+- Post-processing: cell counting per class
 
 ## System Architecture
 
@@ -57,21 +39,15 @@ Input (Blood Smear Image) → Preprocessing → YOLOv10 Detection → Post Proce
 
 ## How to Run
 
-```bash
-pip install ultralytics gradio opencv-python matplotlib
-python app.py
-```
-
-Then open http://127.0.0.1:7860 in your browser and upload a blood smear image!
+Open `BloodCellCount.ipynb` in Google Colab with a GPU runtime and run all cells. The last cell starts the Gradio app.
 
 ## Dataset
 
-BCCD Dataset — Blood Cell Count and Detection
-- 364 blood smear images
+BCCD Dataset — Blood Cell Count and Detection (from Roboflow)
 - 3 classes: RBC, WBC, Platelets
-- Train: 291 images | Validation: 73 images
+- Validation: 94 images
 
-## Applications
+## Potential Applications
 
 - Medical diagnostics and hematology
 - Early detection of anemia, leukemia, infections
@@ -80,13 +56,13 @@ BCCD Dataset — Blood Cell Count and Detection
 
 ## Conference
 
-Presented at **ICFTSEM-II 2025** — International Conference on Future Trends in Science, Engineering and Management
+Presented at the **Second International Conference on Futuristic Trends in Science, Engineering and Management (ICFTSEM-II) 2025**
 
 ## Authors
 
-- Dorathisha P (Reg.No: 921721102029)
-- Swarna Lakshmi R (Reg.No: 921721102163)
-- Varshini M P (Reg.No: 921721102171)
+- Dorathisha P
+- Swarna Lakshmi R
+- Varshini M P
 
 Sethu Institute of Technology, Anna University — March 2025
 
