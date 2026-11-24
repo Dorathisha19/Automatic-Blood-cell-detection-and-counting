@@ -2,9 +2,15 @@
 
 An AI-powered system that automatically detects and counts Red Blood Cells (RBC), White Blood Cells (WBC), and Platelets from blood smear images using YOLOv10 deep learning.
 
-## Demo
+## Demo and Results
 
 ![Gradio output with detected cells and counts](gradio_output.png)
+
+![YOLOv10n training curves over 25 epochs](training_curves.png)
+
+![Per-class validation results](per_class_metrics.png)
+
+![Sample prediction](sample_prediction.png)
 
 ## Performance Metrics
 
